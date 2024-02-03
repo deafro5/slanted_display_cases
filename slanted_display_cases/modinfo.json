@@ -1,0 +1,14 @@
+{
+    "type": "code",
+    "modid": "slanted_display_cases",
+    "name": "Slanted Display Cases",
+    "authors": [
+        "Deafro5"
+    ],
+    "description": "This mod adds Slanted Display Cases to the game for viewing items at angles.",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.18.0",
+        "survival": "1.18.0"
+    }
+}

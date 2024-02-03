@@ -1,0 +1,10 @@
+{
+	"ingredientPattern": "G,P,P,_",
+	"ingredients": {
+		"G": { "type": "block", "code": "game:glass-plain" },
+		"P": { "type": "item", "code": "game:plank-*", "quantity": 2 }
+	},
+	"width": 2,
+	"height": 2,
+	"output": { "type": "block", "code": "displaycaseslanted-generic-south"}
+}

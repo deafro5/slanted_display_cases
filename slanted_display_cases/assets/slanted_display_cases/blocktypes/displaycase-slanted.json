@@ -1,0 +1,63 @@
+{
+	"code": "displaycaseslanted",
+	"behaviors": [{"name": "HorizontalOrientable"}, {"name": "UnstableFalling", "properties": { "fallSound": null, "dustIntensity": 0 }}],	
+	"variantgroups": [
+		{ "code": "type", "states": ["generic"]},
+		{ "code": "side", "loadFromProperties": "game:abstract/horizontalorientation" }
+	],
+	"attributes": {
+		"height": 0.5
+	},
+	"class": "BlockDisplayCaseSlanted",
+	"entityClass": "DisplayCaseSlanted",
+	"creativeinventory": { "general": ["*-south"] },
+	"shapeByType": {
+		"*-north": { "base": "block/wood/displaycaseslanted/{type}", "rotateY":0 },
+		"*-east": { "base": "block/wood/displaycaseslanted/{type}", "rotateY":270 },
+		"*-south": { "base": "block/wood/displaycaseslanted/{type}", "rotateY":180 },
+		"*-west": { "base": "block/wood/displaycaseslanted/{type}", "rotateY":90 }
+	},
+	"drawtype": "json",
+	"blockmaterial": "Wood",
+	"replaceable": 600,
+	"resistance": 3,
+	"lightAbsorption": 0,
+	"heldTpIdleAnimation": "holdbothhandslarge", "heldTpUseAnimation": "twohandplaceblock",
+	"sounds": {
+		"walk": "game:player/buildhigh"
+	},
+	"collisionSelectionBoxes": [
+		{ "x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 0.5, "y2": 0.75, "z2": 0.5,
+			"rotateYByType": {
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90,
+				"*-north": 0
+			} },
+		{ "x1": 0.5, "y1": 0, "z1": 0.0625, "x2": 0.9375, "y2":0.75, "z2": 0.5,
+			"rotateYByType": {
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90,
+				"*-north": 0
+			} },
+		{ "x1": 0.0625, "y1": 0, "z1": 0.5, "x2": 0.5, "y2": 0.3, "z2": 0.9375,
+			"rotateYByType": {
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90,
+				"*-north": 0
+			} },
+		{ "x1": 0.5, "y1": 0, "z1": 0.5, "x2": 0.9375, "y2": 0.3, "z2": 0.9375,
+			"rotateYByType": {
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90,
+				"*-north": 0
+			} }
+	],
+	"sideopaque": { "all": false },
+	"sideao": { "all": true },
+	"emitsideao": { "all": false },
+	"sidesolid": { "all": false }
+}
