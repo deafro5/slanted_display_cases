@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Collections.Generic;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
@@ -271,9 +272,8 @@ namespace slanted_display_cases
             tree.SetFloat("rotation2", rotations[2]);
             tree.SetFloat("rotation3", rotations[3]);
         }
-
-
-        public void OnTransformed(ITreeAttribute tree, int degreeRotation, EnumAxis? flipAxis)
+        
+        public void OnTransformed(IWorldAccessor worldAccessor,ITreeAttribute tree, int degreeRotation, Dictionary<int, AssetLocation> oldBlockIdMapping, Dictionary<int, AssetLocation> oldItemIdMapping, EnumAxis? flipAxis)
         {
             var rot = new int[]{0, 1, 3, 2};
             var rots = new float[4];
