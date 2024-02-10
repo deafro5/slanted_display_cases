@@ -1,6 +1,6 @@
 {
 	"code": "displaycaseslanted",
-	"behaviors": [{"name": "HorizontalOrientable"}, {"name": "UnstableFalling", "properties": { "fallSound": null, "dustIntensity": 0 }}],	
+	"behaviors": [{"name": "HorizontalOrientable", "properties": {"dropBlockFace": "south"}}, {"name": "UnstableFalling", "properties": { "fallSound": null, "dustIntensity": 0 }}],	
 	"variantgroups": [
 		{ "code": "type", "states": ["generic"]},
 		{ "code": "side", "loadFromProperties": "game:abstract/horizontalorientation" }
