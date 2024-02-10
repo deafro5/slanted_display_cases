@@ -24,7 +24,10 @@
 	"lightAbsorption": 0,
 	"heldTpIdleAnimation": "holdbothhandslarge", "heldTpUseAnimation": "twohandplaceblock",
 	"sounds": {
-		"walk": "game:player/buildhigh"
+		"place": "game:block/planks",
+		"break": "game:block/glass",
+		"hit": "game:block/glass",
+		"walk": "game:walk/glass*"
 	},
 	"collisionSelectionBoxes": [
 		{ "x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 0.5, "y2": 0.75, "z2": 0.5,
