@@ -2,20 +2,29 @@
 	"code": "displaycaseslanted",
 	"behaviors": [{"name": "HorizontalOrientable", "properties": {"dropBlockFace": "south"}}, {"name": "UnstableFalling", "properties": { "fallSound": null, "dustIntensity": 0 }}],	
 	"variantgroups": [
-		{ "code": "type", "states": ["generic"]},
+		{ "code": "type", "states": ["generic","aged"], "loadFromProperties": "block/wood"},
 		{ "code": "side", "loadFromProperties": "game:abstract/horizontalorientation" }
 	],
 	"attributes": {
-		"height": 0.5
+		"height": 0.5,
+		"handbook": {
+			"groupBy": ["displaycaseslanted-{type}-*"]
+		}
 	},
 	"class": "BlockDisplayCaseSlanted",
 	"entityClass": "DisplayCaseSlanted",
-	"creativeinventory": { "general": ["*-south"] },
+	"creativeinventory": { "general": ["*-{type}-south"] },
 	"shapeByType": {
-		"*-north": { "base": "block/wood/displaycaseslanted/{type}", "rotateY":0 },
-		"*-east": { "base": "block/wood/displaycaseslanted/{type}", "rotateY":270 },
-		"*-south": { "base": "block/wood/displaycaseslanted/{type}", "rotateY":180 },
-		"*-west": { "base": "block/wood/displaycaseslanted/{type}", "rotateY":90 }
+		"*-north": { "base": "block/wood/displaycaseslanted/generic", "rotateY":0 },
+		"*-east": { "base": "block/wood/displaycaseslanted/generic", "rotateY":270 },
+		"*-south": { "base": "block/wood/displaycaseslanted/generic", "rotateY":180 },
+		"*-west": { "base": "block/wood/displaycaseslanted/generic", "rotateY":90 }
+	},
+	"texturesByType":  {
+		"displaycaseslanted-generic-*": {},
+		"displaycaseslanted-*": {
+			"wood": {"base": "game:block/wood/debarked/{type}"}
+		}
 	},
 	"drawtype": "json",
 	"blockmaterial": "Wood",
