@@ -6,7 +6,7 @@
         "Deafro5"
     ],
     "description": "This mod adds Slanted Display Cases to the game for viewing items at angles.",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "dependencies": {
         "game": "1.19.0",
         "survival": "1.19.0"
